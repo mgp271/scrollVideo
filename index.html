@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>International Cruise &amp; Excursions (ICE), Inc. &#8211; Powered by Innovation</title>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="stylesheets/scrollVideo--custom.css" rel="stylesheet">
+
+	<!-- Preloader -->
+	<script type="text/javascript">
+		//<![CDATA[
+		$(window).on('load', function() { // makes sure the whole site is loaded 
+			$('#status').fadeOut(); // will first fade out the loading animation 
+			$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+			$('body').delay(350).css({'overflow':'visible'});
+		})
+		//]]>
+	</script>
+	
+	<!-- ScrollTo -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var media = $(".scrollVideo001__mediaContent");
+			var mediaOffset = $(".scrollVideo001__centerMedia").offset().top;
+			
+			$(window).scroll(function() {    
+			
+				if ($(this).scrollTop() >= mediaOffset) {
+					media.addClass("fixed-media");
+				} else {
+					media.removeClass("fixed-media");
+				};
+			});
+		});
+		
+		/*$(document).ready(function () {
+		
+			var clicked = false, clickY;
+			$(".dragger-elements").on({
+				'dragstart': function(e) {
+					clicked && updateScrollPos(e);
+				},
+				'dragstart': function(e) {
+					clicked = true;
+					clickY = e.pageY;
+				},
+				'dragend': function() {
+					clicked = false;
+				}
+			});
+
+			var updateScrollPos = function(e) {
+				$(window).scrollTop($(window).scrollTop() + (clickY - e.pageY));
+			}
+		
+		});*/
+		
+		$(document).ready(function () {
+		
+			$( ".scrollVideo001__dragger-elements" ).draggable({
+				containment: ".scrollVideo001__dragWrapper",
+				snap: true,
+				scroll: false,
+				axis: "y",
+				stop: function(event, ui) {
+					if (ui.originalPosition.top - ui.offset.top < 0) {
+						console.log('Dragged Down');
+						/*$("html, body").animate({
+							scrollTop: $(window).scrollTop() + 200
+						});*/
+					} else {
+						console.log('Dragged Up');
+						/*$("html, body").animate({
+							scrollTop: $(window).scrollTop() - 200
+						});*/
+					}
+				}
+			});
+			
+			/*$( ".dragger-elements" ).on( "drag", function( event, ui ) {
+				$("html, body").animate({
+					scrollTop: $(window).scrollTop() + 200
+				});
+			});*/
+
+		});
+
+	</script>
+	
+</head>
+<!--<body class="scroll">-->
+<body>
+<!-- Preloader -->
+<div id="preloader">
+	<div id="status">&nbsp;</div>
+</div>
+
+<div class="page-wrapper">
+
+	<main>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</main>
+	
+	<div class="scrollVideo001">
+		<div class="scrollVideo001__inner">
+			<div class="scrollVideo001__centerMedia">
+				<div class="scrollVideo001__mediaContent">
+					<div class="scrollVideo001__videoWrapper">
+						<div class="scrollVideo001__dragWrapper">
+							<div class="scrollVideo001__dragger-elements">
+							<div class="scrollVideo001__dragable"><div class="white" style="margin-top: 0px; opacity: 0.37433; transform: translate3d(0px, 0px, 0px) scale(1.21391, 1.21391);"></div><div class="white" style="transform: translate3d(0px, 0px, 0px);"></div><div class="arrow" style="transform-origin: 0px 0px 0px; transform: matrix(-0.7071, 0.7071, -0.7071, -0.7071, 40, 20);"><div class="arrowSide"></div><div class="arrowSide" style="transform-origin: 0px 0px 0px; transform: matrix(0, -1, 1, 0, 0, 2);"></div></div><div class="arrow" style="transform-origin: 0px 0px 0px; transform: matrix(0.7071, -0.7071, 0.7071, 0.7071, 38, 60);"><div class="arrowSide"></div><div class="arrowSide" style="transform-origin: 0px 0px 0px; transform: matrix(0, -1, 1, 0, 0, 2);"></div></div></div>
+							
+							<div class="scrollVideo001__dragLine"></div>
+							</div>
+						</div>
+						<video class="scrollVideo001__video" preload="none" loop="" autoplay style="visibility: visible;">
+							<source type="video/mp4" src="https://www.beoplay.com/~/media/Product_pages/BeoplayH9/Frontend/center_1v.mp4">
+						</video>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<main>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</main>
+	
+</div>
+
+	<script src="js/jquery.mousewheel.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
